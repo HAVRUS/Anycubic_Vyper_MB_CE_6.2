@@ -33,67 +33,67 @@
 
 #ifdef VYPER_NOZZLE_HOMING
     #ifdef VYPER_BUILD_CJ
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(CJ+N)"
+        #define SHORT_BUILD_VERSION "CE-6.2.2m (CJ+N)"
     #elif defined VYPER_BUILD_CJ_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(CJ+IS+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (CJ+IS+N)"
     #elif defined VYPER_BUILD_LA_JD
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+N)"
     #elif defined VYPER_BUILD_LA_CJ
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+N)"
     #elif defined VYPER_BUILD_LA_JD_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS+N)"
     #elif defined VYPER_BUILD_LA_CJ_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS+N)"
     #elif defined VYPER_BUILD_LA_JD_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+T+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+T+N)"
     #elif defined VYPER_BUILD_LA_CJ_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+T+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+T+N)"
     #elif defined VYPER_BUILD_LA_JD_IS_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS+T+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS+T+N)"
     #elif defined VYPER_BUILD_LA_CJ_IS_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS+T+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS+T+N)"
     #elif defined VYPER_BUILD_LA_JD_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+TE+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+TE+N)"
     #elif defined VYPER_BUILD_LA_CJ_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+TE+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+TE+N)"
     #elif defined VYPER_BUILD_LA_JD_IS_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS+TE+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS+TE+N)"
     #elif defined VYPER_BUILD_LA_CJ_IS_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS+TE+N)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS+TE+N)"
     #else
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m"
     #endif
 #else
     #ifdef VYPER_BUILD_CJ
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(CJ)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (CJ)"
     #elif defined VYPER_BUILD_CJ_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(CJ+IS)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (CJ+IS)"
     #elif defined VYPER_BUILD_LA_JD
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD)"
     #elif defined VYPER_BUILD_LA_CJ
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ)"
     #elif defined VYPER_BUILD_LA_JD_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS)"
     #elif defined VYPER_BUILD_LA_CJ_IS
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS)"
     #elif defined VYPER_BUILD_LA_JD_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+T)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+T)"
     #elif defined VYPER_BUILD_LA_CJ_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+T)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+T)"
     #elif defined VYPER_BUILD_LA_JD_IS_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS+T)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS+T)"
     #elif defined VYPER_BUILD_LA_CJ_IS_T
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS+T)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS+T)"
     #elif defined VYPER_BUILD_LA_JD_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+TE)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+TE)"
     #elif defined VYPER_BUILD_LA_CJ_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+TE)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+TE)"
     #elif defined VYPER_BUILD_LA_JD_IS_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+JD+IS+TE)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+JD+IS+TE)"
     #elif defined VYPER_BUILD_LA_CJ_IS_TE
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2(LA+CJ+IS+TE)"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m (LA+CJ+IS+TE)"
     #else
-        #define SHORT_BUILD_VERSION "Vyper-CE-6.2.2"
+        #define SHORT_BUILD_VERSION "CE 6.2.2m"
     #endif
 #endif
 
@@ -101,14 +101,14 @@
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-#define DETAILED_BUILD_VERSION "Vyper Community Firmware - Release 6.2.2 (Marlin 2.1.2.1)"
+#define DETAILED_BUILD_VERSION "Community Firmware - Release 6.2.2m (Marlin 2.1.2.1)"
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "2024-12-25"
+#define STRING_DISTRIBUTION_DATE "2025-06-20"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
@@ -121,7 +121,7 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-#define SOURCE_CODE_URL "github.com/rommulaner"
+#define SOURCE_CODE_URL "https://github.com/HAVRUS"
 
 /**
  * Default generic printer UUID.
@@ -132,7 +132,7 @@
  * The WEBSITE_URL is the location where users can get more information such as
  * documentation about a specific Marlin release.
  */
-#define WEBSITE_URL "github.com/rommulaner"
+#define WEBSITE_URL "https://github.com/HAVRUS"
 
 /**
  * Set the vendor info the serial USB interface, if changable

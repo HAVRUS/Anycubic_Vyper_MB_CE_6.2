@@ -68,18 +68,18 @@
 //#define VYPER_BUILD_LA_CJ_T     // with linear advance and classic jerk enabled and with uart connection to TMC2209's for x, y, z and z2
 //#define VYPER_BUILD_LA_JD_TE    // with linear advance and junction deviation enabled and with software serial connection to e stepper
 //#define VYPER_BUILD_LA_CJ_TE    // with linear advance and classic jerk enabled and with software serial connection to e stepper
-//#define VYPER_BUILD_LA_JD_IS      // with linear advance and junction deviation enabled and input shaping
-#define VYPER_BUILD_LA_CJ_IS    // with linear advance and classic jerk enabled and input shaping
+#define VYPER_BUILD_LA_JD_IS    // with linear advance and junction deviation enabled and input shaping
+//define VYPER_BUILD_LA_CJ_IS     // with linear advance and classic jerk enabled and input shaping
 //#define VYPER_BUILD_LA_JD_IS_T  // with linear advance and junction deviation enabled and input shaping and with uart connection to TMC2209's for x, y, z and z2
 //#define VYPER_BUILD_LA_CJ_IS_T  // with linear advance and classic jerk enabled and input shaping and with uart connection to TMC2209's for x, y, z and z2
 //#define VYPER_BUILD_LA_JD_IS_TE // with linear advance and junction deviation enabled and input shaping and with software serial connection to e stepper
 //#define VYPER_BUILD_LA_CJ_IS_TE // with linear advance and classic jerk enabled and input shaping and with software serial connection to e stepper
 
-#define GRID_MAX_POINTS_X 4   // moved here for easier change of the bed leveling mesh size
+#define GRID_MAX_POINTS_X 7   // moved here for easier change of the bed leveling mesh size
 
-//#define ALL_METAL_HOTEND      // activate if all metal hotend installed; hotend max temp will be raisded from 260 to 300
+#define ALL_METAL_HOTEND      // activate if all metal hotend installed; hotend max temp will be raisded from 260 to 300
 
-#define SLOWDOWN_FAN_ON_TEMPDROP    // activates ADAPTIVE_FAN_SLOWING in configuration_adv.h
+//#define SLOWDOWN_FAN_ON_TEMPDROP    // activates ADAPTIVE_FAN_SLOWING in configuration_adv.h
 
 // Leave undefined to home Z using two Z sensors (stock configuration)
 //#define VYPER_NOZZLE_HOMING // home Z using nozzle sensor at middle of bed
@@ -91,7 +91,7 @@
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Rommulaner, Vyper CE-6.2.2 Marlin 2.1.2.1)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(HAVRUS, CE 6.2.2m (Marlin 2.1.2.1))" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -168,7 +168,7 @@
 
 // Name displayed in the LCD "Ready" message and Info menu
 //#define CUSTOM_MACHINE_NAME "3D Printer"
-#define CUSTOM_MACHINE_NAME "Anycubic Vyper CE-6.2.2"
+#define CUSTOM_MACHINE_NAME "Anycubic Vyper CE 6.2.2m"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -726,9 +726,9 @@
     //#define DEFAULT_Kp  22.20
     //#define DEFAULT_Ki   1.08
     //#define DEFAULT_Kd 114.00
-    #define DEFAULT_Kp 35.1458
-    #define DEFAULT_Ki 3.5006
-    #define DEFAULT_Kd 88.2161
+    #define DEFAULT_Kp 82.2827
+    #define DEFAULT_Ki 16.0708
+    #define DEFAULT_Kd 105.3219
   #endif
 #endif
 
@@ -814,9 +814,9 @@
   //#define DEFAULT_bedKp 10.00
   //#define DEFAULT_bedKi .023
   //#define DEFAULT_bedKd 305.4
-  #define DEFAULT_bedKp 98.5913
-  #define DEFAULT_bedKi 18.1234
-  #define DEFAULT_bedKd 357.557
+  #define DEFAULT_bedKp 101.6619
+  #define DEFAULT_bedKi 10.4162
+  #define DEFAULT_bedKd 661.4802
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1781,6 +1781,7 @@
 // The size of the printable area
 #define X_BED_SIZE 250
 #define Y_BED_SIZE 255
+#define Z_BED_SIZE 180 //for direct extruder
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS -1.0
@@ -1788,7 +1789,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 265
+#define Z_MAX_POS Z_BED_SIZE
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
@@ -2030,7 +2031,7 @@
     #define MESH_TEST_BED_TEMP      60    // (°C) Default bed temperature for G26.
     #define G26_XY_FEEDRATE         35    // (mm/s) Feedrate for G26 XY moves.
     #define G26_XY_FEEDRATE_TRAVEL 100    // (mm/s) Feedrate for G26 XY travel moves.
-    #define G26_RETRACT_MULTIPLIER   3.0  // G26 Q (retraction) used by default between mesh test elements.
+    #define G26_RETRACT_MULTIPLIER   1.0  // G26 Q (retraction) used by default between mesh test elements.
   #endif
 
 #endif
@@ -2302,14 +2303,14 @@
 // Preheat Constants - Up to 10 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 180
+#define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
 //#define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     85
+#define PREHEAT_2_TEMP_HOTEND 230
+#define PREHEAT_2_TEMP_BED     70
 //#define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
